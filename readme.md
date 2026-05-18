@@ -17,8 +17,8 @@ A simple web application for detecting and recognizing known faces using images 
 * Python 3.8 
 * Streamli 
 * OpenC 
-* face\_recognitio 
-* NumP 
+* face_recognition
+* Numpy
 * PIL
 
 ---
