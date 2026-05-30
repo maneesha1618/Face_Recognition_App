@@ -1,0 +1,19 @@
+version: "3.9"
+
+services:
+  facevault:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: facevault
+    ports:
+      - "8501:8501"
+    volumes:
+      - facevault_data:/app/data
+    env_file:
+      - ../.env
+    restart: unless-stopped
+
+volumes:
+  facevault_data:
+    driver: local

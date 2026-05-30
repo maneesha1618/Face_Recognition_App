@@ -1,1 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+*.so
+
+# Virtual environments
+.venv/
+venv/
 env/
+
+# Environment variables — NEVER commit this
+.env
+
+# Data — don't commit face images or DB
+data/known_faces/*.jpg
+data/known_faces/*.jpeg
+data/known_faces/*.png
+data/*.db
+
+# Models cache
+models/
+.deepface/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# macOS
+.DS_Store
+
+# Streamlit cache
+.streamlit/secrets.toml
